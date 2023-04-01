@@ -10,7 +10,8 @@ mongoose.set('strictQuery', false);
 
 const Connection = () => {
 
-    const MONGODB_URI=`mongodb+srv://${USERNAME}:${PASSWORD}@cluster0.pumho12.mongodb.net/?retryWrites=true&w=majority`
+//     const MONGODB_URI=`mongodb+srv://${USERNAME}:${PASSWORD}@cluster0.pumho12.mongodb.net/?retryWrites=true&w=majority`
+    const MONGODB_URI = `mongodb+srv://${USERNAME}:${PASSWORD}@cluster0.gajprnv.mongodb.net/?retryWrites=true&w=majority`
     mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
     mongoose.connection.on('connected', () => {
